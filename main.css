@@ -1,0 +1,23 @@
+/* main.css - Main stylesheet that imports all partials */
+
+/* Base styles */
+@import "base/_variables.css";
+@import "base/_reset.css";
+
+/* Layout components */
+@import "layout/_grid.css";
+@import "layout/_header.css";
+@import "layout/_footer.css";
+
+/* UI Components */
+@import "components/_buttons.css";
+@import "components/_cards.css";
+@import "components/_hero.css";
+@import "components/_modal.css"; /* Added modal component */
+@import "components/_mobile-menu.css"; /* Fixed path to mobile menu CSS */
+
+/* Page specific styles */
+@import "pages/_home.css";
+@import "pages/_about.css";
+@import "pages/_works.css";
+@import "pages/_contact.css";

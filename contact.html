@@ -9,20 +9,31 @@
   </head>
 
   <body>
-    <!-- Header Component (Shared across all pages) -->
+    <!-- Modified header component -->
     <header class="site-header">
       <div class="container">
         <nav>
           <div class="logo">
             <div class="logo-content">
-              <img src="images/CT LOGO 16x16.svg" alt="Chelsea Townsend Logo" width="52" height="52">
-              <a href="index.html"
-              class="contact-info__link">
+              <img
+                src="images/CT LOGO 16x16.svg"
+                alt="Chelsea Townsend Logo"
+                width="52"
+                height="52"
+              />
+              <a href="index.html" class="contact-info__link">
                 Chelsea Townsend
               </a>
             </div>
           </div>
-          <div class="nav-links">
+          
+          <!-- Hamburger Menu Button -->
+          <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger-icon"></span>
+          </button>
+          
+          <!-- Nav Links with mobile-nav ID -->
+          <div class="nav-links" id="mobile-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="works.html">Works</a>
@@ -250,5 +261,6 @@
 
     <!-- JavaScript for form validation -->
     <script src="js/contact-form.js" defer></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

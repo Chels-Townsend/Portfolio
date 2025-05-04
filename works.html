@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <!-- Header Component (Shared across all pages) -->
+    <!-- Modified header component -->
     <header class="site-header">
       <div class="container">
         <nav>
@@ -30,7 +30,17 @@
               </a>
             </div>
           </div>
-          <div class="nav-links">
+
+          <!-- Hamburger Menu Button -->
+          <button
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="hamburger-icon"></span>
+          </button>
+
+          <!-- Nav Links with mobile-nav ID -->
+          <div class="nav-links" id="mobile-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="works.html" class="active">Works</a>
@@ -131,7 +141,7 @@
               </div>
             </article>
 
-            <!-- Project Card Component - Gamified Learning 
+            <!-- Project Card Component - Gamified Learning
             <article class="project-card" data-project-id="gamified-learning">
               <div class="project-card__image">
                 <img
@@ -145,7 +155,7 @@
                 <div class="tag-container"></div>
               </div>
             </article>
--->
+ -->
             <!-- Project Card Component - Sales Quest -->
             <article class="project-card" data-project-id="sales-quest">
               <div class="project-card__image">
@@ -203,5 +213,6 @@
     <!-- JavaScript for project data and modal functionality -->
     <script src="js/project-data.js"></script>
     <script src="js/project-modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
