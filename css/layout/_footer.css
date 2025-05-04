@@ -1,0 +1,50 @@
+/* ---------------------------------------------
+ * layout/_footer.css - Site footer
+ * --------------------------------------------- */
+
+.site-footer {
+  background-color: var(--neutral-800);
+  color: white;
+  padding: var(--space-8) 0;
+  border-radius: 50% 50% 0 0 / 4%;
+  margin-top: var(--space-10);
+}
+
+.site-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer p {
+  font-size: var(--font-size-sm);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  padding: var(--space-2);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-base);
+}
+
+.social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .site-footer__content {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+}

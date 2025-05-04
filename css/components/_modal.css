@@ -1,0 +1,212 @@
+/* ---------------------------------------------
+ * components/_modal.css - Modal component styles
+ * --------------------------------------------- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-20px);
+  transition: transform var(--transition-base);
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0);
+}
+
+.modal__close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  background: var(--neutral-200);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+  z-index: 10;
+}
+
+.modal__close:hover {
+  background-color: var(--neutral-300);
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__image {
+  width: 100%;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  overflow: hidden;
+}
+
+.modal__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal__details {
+  padding: var(--space-6);
+}
+
+.modal__title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.modal__description {
+  color: var(--neutral-700);
+  margin-bottom: var(--space-5);
+}
+
+/* Add improved paragraph spacing within modal description */
+.modal__description p {
+  margin-bottom: var(--space-4);
+}
+
+.modal__description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Add better list styling in modal */
+.modal__description ul,
+.modal__description ol {
+  margin-left: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.modal__description li {
+  margin-bottom: var(--space-2);
+}
+
+.modal__metadata {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--neutral-200);
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.metadata-item h3 {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--neutral-600);
+  margin-bottom: var(--space-2);
+}
+
+.metadata-item p {
+  color: var(--neutral-800);
+}
+
+.modal__tags {
+  margin-bottom: var(--space-4);
+}
+
+.modal__links {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  .modal {
+    width: 95%;
+  }
+
+  .modal__details {
+    padding: var(--space-4);
+  }
+
+  .modal__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .metadata-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 95%;
+    max-height: 85vh;
+  }
+
+  .modal__details {
+    padding: var(--space-3);
+  }
+
+  .modal__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-3);
+  }
+
+  .modal__description {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-4);
+    padding: 0 var(--space-2);
+  }
+
+  /* Fix for bullet points touching the edge */
+  .modal__description ul,
+  .modal__description ol {
+    margin-left: var(--space-4);
+    padding-right: var(--space-1);
+  }
+
+  .metadata-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .modal__links {
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+  }
+
+  .modal__links .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

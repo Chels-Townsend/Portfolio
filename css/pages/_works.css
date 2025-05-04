@@ -1,0 +1,123 @@
+/* ---------------------------------------------
+ * pages/_works.css - Works page specific styles
+ * --------------------------------------------- */
+
+/* Hero modifier for works page */
+.hero--works {
+  background: linear-gradient(
+    135deg,
+    rgba(198, 250, 149, 0.2),
+    rgba(248, 187, 208, 0.2),
+    rgba(240, 171, 240, 0.288)
+  );
+}
+
+/* Filter controls */
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: var(--space-2) var(--space-5);
+  background-color: var(--neutral-200);
+  border: none;
+  border-radius: var(--border-radius-full);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-base);
+  color: var(--neutral-700);
+}
+
+.filter-btn:hover {
+  background-color: var(--accent-purple);
+  color: var(--neutral-800);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: var(--accent-purple);
+  color: var(--neutral-800);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Works grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--space-6);
+  position: relative;
+  min-height: 200px;
+}
+
+/* Project card - extending the shared component */
+.works-grid .project-card {
+  transition: transform var(--transition-base),
+    box-shadow var(--transition-base), opacity var(--transition-base);
+}
+
+/* Animation for filtering */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hidden state for filtered items */
+.project-card.hidden {
+  display: none;
+}
+
+/* No results message */
+.no-results {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--neutral-600);
+  font-size: var(--font-size-lg);
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-controls {
+    gap: var(--space-3);
+  }
+
+  .filter-btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-controls {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: var(--space-3);
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;
+  }
+}

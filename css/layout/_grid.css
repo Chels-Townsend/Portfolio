@@ -1,0 +1,70 @@
+/* ---------------------------------------------
+ * layout/_grid.css - Container and layout system
+ * --------------------------------------------- */
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+/* Section */
+.section {
+  padding-block: var(--space-8);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  position: relative;
+}
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background-color: var(--accent-pink);
+  margin: var(--space-4) auto 0;
+  border-radius: 2px;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-6);
+}
+
+.card-grid--scrollable {
+  display: flex;
+  overflow-x: auto;
+  padding: var(--space-4);
+  gap: var(--space-6);
+  scroll-padding: var(--space-4);
+  scrollbar-width: thin;
+  scrollbar-color: var(--neutral-400) transparent;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: var(--space-4);
+  }
+
+  .section {
+    padding-block: var(--space-6);
+  }
+
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+}

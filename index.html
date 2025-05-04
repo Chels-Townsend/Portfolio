@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chelsea Townsend Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="images/png"
+      href="images/CT LOGO DARK w background.png"
+    />
+  </head>
+  <body>
+    <!-- Header Component -->
+    <header class="site-header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <div class="logo-content">
+              <img
+                src="images/CT LOGO 16x16.svg"
+                alt="Chelsea Townsend Logo"
+                width="52"
+                height="52"
+              />
+              <a href="index.html" class="contact-info__link">
+                Chelsea Townsend
+              </a>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="works.html">Works</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Banner Component -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Transforming Education Through Instructional Technology
+            </h1>
+            <p class="hero__description">
+              Creating engaging e-learning experiences and researching
+              innovative technology in education
+            </p>
+            <a href="works.html" class="btn btn--primary">View My Work</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Component -->
+      <section id="featured-projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+
+          <div class="card-grid card-grid--scrollable">
+            <!-- Project Card Component -->
+            <article class="project-card" data-project-id="financial-literacy">
+              <div class="project-card__image">
+                <img
+                  src="images/growing money.jpg"
+                  alt="Growing money plant illustration"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title"></h3>
+                <p class="project-card__description"></p>
+                <div class="tag-container"></div>
+              </div>
+            </article>
+
+            <!-- Project Card Component -->
+            <article class="project-card" data-project-id="sales-quest">
+              <div class="project-card__image">
+                <img src="images/office.jpg" alt="Sales Quest job aid" />
+              </div>
+              <!-- Content populated automatically by JavaScript project-data -->
+              <div class="project-card__content">
+                <h3 class="project-card__title"></h3>
+                <p class="project-card__description"></p>
+                <div class="tag-container"></div>
+              </div>
+            </article>
+
+            <!-- Project Card Component -->
+            <article class="project-card" data-project-id="ai-agents">
+              <div class="project-card__image">
+                <img
+                  src="images/information-data.jpg"
+                  alt="Finance game placeholder"
+                />
+              </div>
+              <!-- Content populated automatically by JavaScript project-data -->
+              <div class="project-card__content">
+                <h3 class="project-card__title"></h3>
+                <p class="project-card__description"></p>
+                <div class="tag-container"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Preview Component -->
+      <section id="about-preview" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="profile-preview">
+            <div class="profile-preview__image">
+              <img
+                src="images/Chelsea Profile.jpg"
+                alt="Chelsea Townsend profile photo"
+                class="profile-img"
+              />
+            </div>
+            <div class="profile-preview__content">
+              <h3>Passionate about Educational Innovation</h3>
+              <p>
+                I am an instructional technology specialist with expertise in
+                designing and developing effective e-learning experiences. My
+                research focuses on how technology can enhance learning outcomes
+                and engagement in educational settings.
+              </p>
+              <p>
+                With a background in both education and technology, I bridge the
+                gap between pedagogical theory and practical implementation,
+                creating learning solutions that truly make a difference.
+              </p>
+              <div class="button-group">
+                <a href="about.html" class="btn btn--primary"
+                  >Learn More About Me</a
+                >
+                <a href="contact.html" class="btn btn--secondary">Contact Me</a>
+              </div>
+
+              <div class="tag-container">
+                <span class="tag">Instructional Design</span>
+                <span class="tag">E-Learning Development</span>
+                <span class="tag">Educational Research</span>
+                <span class="tag">UX Design</span>
+                <span class="tag">Learning Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__content">
+          <p>&copy; 2025 Chelsea Townsend Portfolio</p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/chelsea-townsend-29b940105/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for project data and modal functionality -->
+    <script src="js/project-data.js"></script>
+    <script src="js/project-modal.js"></script>
+  </body>
+</html>

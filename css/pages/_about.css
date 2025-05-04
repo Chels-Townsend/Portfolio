@@ -1,0 +1,220 @@
+/* ---------------------------------------------
+ * pages/_about.css - About page specific styles
+ * --------------------------------------------- */
+
+/* About Page Layout */
+.about-content {
+  padding: var(--space-10) 0;
+}
+
+.about-content .container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-8);
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+  background-color: white;
+  padding: var(--space-6);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-6));
+  align-self: start;
+}
+
+.profile-sidebar__image {
+  margin-bottom: var(--space-5);
+}
+
+.profile-sidebar__image img {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+}
+
+.profile-sidebar__name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+}
+
+.profile-sidebar__title {
+  color: var(--neutral-700);
+  margin-bottom: var(--space-5);
+  font-size: var(--font-size-base);
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: var(--space-6);
+}
+
+.contact-info__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.contact-info__link {
+  color: var(--neutral-800);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.contact-info__link:hover {
+  color: var(--accent-purple);
+}
+
+/* About Main Content */
+.about-main {
+  max-width: 100%;
+}
+
+/* About Sections */
+.about-section {
+  margin-bottom: var(--space-10);
+}
+
+.about-section .section-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-6);
+  text-align: left;
+  position: relative;
+}
+
+.about-section .section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--accent-purple);
+  margin-top: var(--space-2);
+  border-radius: 2px;
+}
+
+.about-section__content {
+  color: var(--neutral-700);
+}
+
+.about-section__content p {
+  margin-bottom: var(--space-5);
+}
+
+/* Education Items */
+.education-item {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.education-item:last-child {
+  border-bottom: none;
+}
+
+.education-item__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.education-item__institution {
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-1);
+}
+
+.education-item__date {
+  color: var(--neutral-600);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-3);
+}
+
+.education-item__description {
+  color: var(--neutral-700);
+}
+
+/* Experience Items */
+.experience-item {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-item__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.experience-item__company {
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-1);
+}
+
+.experience-item__date {
+  color: var(--neutral-600);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-3);
+}
+
+.experience-item__description {
+  color: var(--neutral-700);
+}
+
+/* About Page Hero Modifier */
+.hero--about {
+  background: linear-gradient(
+    135deg,
+    rgba(148, 97, 241, 0.288),
+    rgba(115, 157, 204, 0.164),
+    rgba(166, 219, 190, 0.315)
+  );
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-content .container {
+    grid-template-columns: 250px 1fr;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content .container {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    position: static;
+    margin-bottom: var(--space-8);
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-section .section-title {
+    text-align: center;
+  }
+
+  .about-section .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding-top: var(--space-6);
+  }
+
+  .about-section {
+    margin-bottom: var(--space-8);
+  }
+}

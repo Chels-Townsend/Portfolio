@@ -1,0 +1,60 @@
+/* ---------------------------------------------
+ * components/_buttons.css - Button styles
+ * --------------------------------------------- */
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: var(--border-radius-full);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--primary {
+  background-color: var(--accent-purple);
+  color: var(--neutral-800);
+}
+
+.btn--secondary {
+  background-color: var(--accent-blue);
+  color: var(--neutral-800);
+}
+
+/* Update for components/_buttons.css */
+
+.button-group {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  /* Center buttons on tablet and mobile */
+  .profile-preview .button-group {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Stack buttons vertically on small screens */
+  .profile-preview .button-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-preview .button-group .btn {
+    width: 100%;
+  }
+}
