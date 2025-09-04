@@ -35,6 +35,38 @@ const projectsData = [
       },
     ],
   },
+
+  {
+    id: "time-game",
+    title: "Telling Time in Other Languages",
+    shortDescription:
+      "An interactive game that teaches users to tell time in Spanish, French, German, and Japanese.",
+    fullDescription: `
+      <p>This single-page application helps language learners practice and test their time-telling skills across multiple languages. The gameplay is straightforward: players select their target language, then receive time phrases in that language and must adjust a digital clock to match the given time. With no time pressure or scoring system, the focus remains on repetition and steady language acquisition.</p>
+      
+      <p>Key learning objectives include:</p>
+      <ul>
+        <li>Reading and interpreting time phrases in different languages</li>
+        <li>Understanding various time-telling conventions and expressions</li>
+        <li>Converting between 12-hour and 24-hour time formats</li>
+      </ul>
+      
+      <p>The game provides immediate feedback and adapts to player choices, creating a personalized learning experience that reinforces comprehension through consistent practice.</p>
+    `,
+    thumbnail: "images/timegame.jpg",
+    fullImage: "images/timegame.jpg",
+    tags: ["Gamification", "E-Learning"],
+    tools: ["Visual Studio Code", "Anthropic's Claude"],
+    duration: "1 day",
+    role: "Instructional Designer & Developer",
+    links: [
+      {
+        text: "View Game",
+        url: "https://chels-townsend.github.io/Time-Language-Game/",
+        primary: true,
+      },
+    ],
+  },
   {
     id: "sales-quest",
     title: "Sales Quest Job Aid",
@@ -196,8 +228,8 @@ const projectsData = [
     `,
     thumbnail: "images/information-data.jpg",
     fullImage: "images/information-data.jpg",
-    tags: ["Research", "Emerging Tech"],
-    tools: ["LangChain", "OpenAI API"],
+    tags: ["E-Learning", "Emerging Tech", "Research"],
+    tools: ["LangChain", "OpenAI API", "Qualitative Analysis Software"],
     duration: "Ongoing",
     role: "Principal Investigator",
     links: [],
