@@ -53,8 +53,8 @@ const projectsData = [
       
       <p>The game provides immediate feedback and adapts to player choices, creating a personalized learning experience that reinforces comprehension through consistent practice.</p>
     `,
-    thumbnail: "images/timegame2.jpg",
-    fullImage: "images/timegame2.jpg",
+    thumbnail: "./images/Timegame2.jpg",
+    fullImage: "./images/Timegame2.jpg",
     tags: ["Gamification", "E-Learning"],
     tools: ["Visual Studio Code", "Anthropic's Claude"],
     duration: "1 day",
@@ -273,3 +273,4 @@ const projectsData = [
     ],
   },
 ];
+
