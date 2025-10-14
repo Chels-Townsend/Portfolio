@@ -56,7 +56,11 @@ const projectsData = [
     thumbnail: "./images/Timegame2.jpg",
     fullImage: "./images/Timegame2.jpg",
     tags: ["Gamification", "E-Learning"],
-    tools: ["Visual Studio Code", "Anthropic's Claude"],
+    tools: [
+      "HTML, CSS, Javascript",
+      "Visual Studio Code",
+      "Anthropic's Claude",
+    ],
     duration: "1 day",
     role: "Instructional Designer & Developer",
     links: [
@@ -98,6 +102,42 @@ const projectsData = [
         primary: true,
         target: "_blank",
         rel: "noopener noreferrer",
+      },
+    ],
+  },
+  {
+    id: "meddpicc-detective",
+    title: "MEDDPICC Methodology Training",
+    shortDescription:
+      "An interactive sales training game that teaches the MEDDPICC qualification methodology.",
+    fullDescription: `
+      <p>MEDDPICC Detective gamifies sales qualification training by challenging players to uncover eight MEDDPICC elements through strategic stakeholder conversations. Players earn points for discovering key deal information, build investigation notes, and complete a quiz that tests their understanding. This vanilla JavaScript game transforms complex B2B sales methodology into an interactive, engaging learning experience.</p>
+      
+      <p>Key learning objectives include:</p>
+      <ul>
+        <li>Recognizing the key components of the MEDDPICC methodology in a B2B sales context</li>
+        <li>Connecting stakeholder roles to qualification data through discovery</li>
+        <li>Developing discovery skills across multiple stakeholder conversations</li>
+      </ul>
+      
+      <p>
+The game concludes with a knowledge check covering MEDDPICC definitions and specific deal details uncovered during gameplay. By practicing discovery in a simulated environment, sales professionals build pattern recognition skills that translate directly to improved qualification rigor in live customer conversations.</p>
+    `,
+    thumbnail: "./images/mdhome.jpg",
+    fullImage: "./images/hdgameplay.jpg",
+    tags: ["Gamification", "E-Learning"],
+    tools: [
+      "HTML, CSS, Javascript",
+      "Visual Studio Code",
+      "Anthropic's Claude",
+    ],
+    duration: "1 day",
+    role: "Instructional Designer & Developer",
+    links: [
+      {
+        text: "View Game",
+        url: "https://chels-townsend.github.io/MEDDPICC-Detective/",
+        primary: true,
       },
     ],
   },
