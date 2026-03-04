@@ -142,6 +142,39 @@ The game concludes with a knowledge check covering MEDDPICC definitions and spec
     ],
   },
   {
+    id: "core-selling",
+    title: "Core Selling Strategies",
+    shortDescription:
+      "A 5-module e-learning course covering essential sales skills including effective listening, storytelling, questioning, and building rapport.",
+    fullDescription: `
+      <p>Core Selling Strategies is a comprehensive 5-module course designed to teach the foundational skills of effective selling. Built as an independent project to deepen expertise with Articulate Rise, the course takes a highly interactive approach to sales training.</p>
+      
+      <p>The course covers:</p>
+      <ul>
+        <li>Effective listening techniques in sales conversations</li>
+        <li>Storytelling as a persuasion and connection tool</li>
+        <li>Strategic questioning to uncover customer needs</li>
+        <li>Building rapport and trust with prospects</li>
+        <li>Bringing core selling skills together in real scenarios</li>
+      </ul>
+      
+      <p>Every available interactive element in Articulate Rise was used throughout the course, including branching scenarios, flashcards, sorting activities, and more, making it a rich and engaging learning experience from start to finish.</p>
+    `,
+    thumbnail: "images/deal.jpg",
+    fullImage: "images/handshake.jpg",
+    tags: ["E-Learning", "Instructional Design"],
+    tools: ["Articulate Rise"],
+    duration: "1 month",
+    role: "Instructional Designer & Developer",
+    links: [
+      {
+        text: "View Course",
+        url: "https://chels-townsend.github.io/Core-Selling-Strategies/",
+        primary: true,
+      },
+    ],
+  },
+  {
     id: "engagement-patterns",
     title: "Engagement Patterns Research",
     shortDescription:
